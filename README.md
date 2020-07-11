@@ -3,13 +3,13 @@ This code was used in [this preprint](https://doi.org/10.1101/856898).
 
 # Dependencies
 Training (R):
-mvtnorm
+-mvtnorm
 
 Visualization (python):
-numpy
-pandas
-matplotlib
-scipy
+-numpy
+-pandas
+-matplotlib
+-scipy
 
 # Step 1: Training models
 
