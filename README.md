@@ -8,10 +8,6 @@ This code was used in [this preprint](https://doi.org/10.1101/856898).
 - seaborn
 - scipy
 
-summary=../../human_gwas_data/summary_statistics/${f%_summary_statistics.txt}_summary_statistics.txt
-out=../../human_gwas_data/results_2021/${f%_summary_statistics.txt}_model
-python wcrep.py $summary $out
-
 
 # Step 1: Training models
 
@@ -20,7 +16,7 @@ Both the winner's curse model and the winner's curse and confounding models are 
 ## Usage
 python wcrep.py [data table] [prefix]
 
-## Input data
+## Input
 The input data is as follows:
 1. A table with the z-scores (tab deliminated with a header; the columns can be anything)
 	- The first column should have z-scores of the significant variants in the discovery study
@@ -30,7 +26,7 @@ The input data is as follows:
 	- The threshold used for the discovery study
 2. Output prefix
 
-## Output data
+## Output
 The output is a single text file with the following values in each column.
 1. Name of the input data
 2. Sample size of the discovery study
